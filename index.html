@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- font Awsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- tailwindcss -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <!-- tailwindcss -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+
+        #ADD{
+         background-color: #1E242D;
+        }
+        .navBar{
+        
+        padding-bottom: 10px ;
+        }
+        .imgslider{
+            z-index: -2;
+        }
+        .slider {
+            /* border: solid 2px black; */
+            width: 95%;
+            z-index: -1;
+            height: 400px;
+            position: relative;
+            border-radius: 10px;
+            background: url(/images/ph-4.jpg) center/cover  no-repeat  ;
+            opacity: 1;
+        }
+       
+        .btn-left{
+            position:absolute;
+            top: 40%;
+            left: 30px;
+            transform:scale(6) ;
+            cursor: pointer;
+           
+        }
+        .btn-right{
+            position:absolute;
+            top: 40%;
+            right: 30px;
+            transform:scale(6) ;
+            cursor: pointer;
+        }
+        .imgbrands{
+            width: 200px;
+            height: 200px;
+        }
+        .expcus{
+            position: relative;
+            width: 300px;
+            height: 220px;
+            border-radius:10%;
+            background-color:  rgba(200, 200,200 , 0.4);
+        }
+        .expcus h1{
+            top: 50px;
+            font-weight: bolder;
+            font-size: x-large;
+        }
+        .expcus p{
+            text-align: start;
+        }
+        .icon{
+            transform: scale(4);
+            position: relative;
+            
+            top: 20px;
+            display: inline-block;
+        }
+        .arrivals{
+            z-index: -2;
+        }
+       .arrivals img{
+        width: 300px;
+        animation-name: cloth;
+        height: 200px;
+        animation-duration: 3s;
+        animation-timing-function: linear;
+        
+        animation-iteration-count: infinite;
+        z-index: -2;
+       }
+       .mostWant{
+        border: solid 2px black ;
+        border-radius: 10%;
+        padding: 0;
+       }
+       .mostWant cart{
+        transform: scale(2.5);
+       }
+       .mostWant__con{
+        margin-top: 200px;
+    
+       }
+       .mostWant img{
+        width: 250px;
+        z-index: -1;
+        
+        height: 200px;
+   opacity: 0.8;
+
+       }
+       @keyframes cloth {
+        0%{transform:scale(0.9) ;}
+        50%{transform:scale(1) ;}
+       100%{transform: scale(0.9);}
+       
+        
+       }
+       .limited__sale{
+        height: 400px;
+
+        width: 90%;
+       }
+     </style>
+</head>
+<body>
+    <!-- add -->
+    <div id="ADD" class="bg- w-6/6 h-10 text-white z-30"> 
+  <marquee><h1 class="font-bold text-xl text-center pt-1 relative"> <b> SIGN-IN AND GET 20% OFF ON YOUR FIRST ORDER </b></h1></marquee> 
+</div>
+
+<!-- section 1 -->
+<section class="navBar flex sticky top-0  bg-white ">
+    <nav class=" mt-5 flex justify-around items-center p-1.5  z-10 bg-white">
+        <h2 class=" relative left-3 font-extrabold text-2xl ">Shopolics</h2>
+        <ul class="flex  bg-inherit gap-16 relative left-96" >
+            <li>Home</li>
+            <li>New Arrival</li>
+            <li>Most Wanted</li>
+            <li>Collection</li>
+            <li>Conatct Us</li>
+        </ul>
+    </nav>
+</section>
+
+<!-- sliding 2 section  -->
+ <section class="  imgslider flex justify-center mt-3 ">
+    <div class="slider">
+    <a  class="btn btn-left"><i class="fa-solid fa-chevron-left"></i></a>
+    <a  class="btn btn-right"><i class="fa-solid fa-chevron-right"></i></a>
+  </div>
+ </section>
+
+ <!-- section 3 brands  -->
+  <section class="my-20 mx-10 font-extrabold text-2xl">
+    <h1 class="font-extrabold text-2xl">Brands</h1>
+    <div class="flex gap-5 justify-between">
+    <div class="brand-__sec flex flex-col justify-center items-center">
+        
+        <img  class="imgbrands" src="images/puma.png" alt="">
+        <h2 class="">Puma</h2>
+    </div>
+    <div class="brand-__sec flex flex-col justify-center items-center">
+        
+        <img  class="imgbrands" src="images/adidas.png" alt="">
+        <h2 >Adidas</h2>
+    </div>
+    <div class="brand-__sec flex flex-col justify-center items-center">
+        
+        <img  class="imgbrands" src="images/lorem ipsum.png" alt="">
+        <h2 >lorem Ipsum</h2>
+    </div>
+    <div class="brand-__sec flex flex-col justify-center items-center">
+        
+        <img  class="imgbrands" src="images/spa pre.png" alt="">
+        <h2 >Spa premium</h2>
+    </div>
+   
+    </div>
+   
+  </section>
+
+
+  <!-- section 4 customer exp -->
+  <section class="mx-10 ">
+    <h1 class="font-light text-2xl ml-5">
+        WE PROVIDE BEST <br>
+        CUSTOMER EXPERIENCE
+    </h1>
+    <div class="flex gap-5 justify-between mt-5">
+    <div class="expcus text-center p-3">
+        <i class="icon fa-regular fa-circle-check"></i>
+        <h1 class="block relative top-10 ">Original Products</h1>
+        <p class="relative top-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci.</p>
+    </div>
+    <div class="expcus text-center p-3">
+        <i class="icon fa-regular fa-face-smile"></i>
+        <h1 class="block relative top-10 ">Satisfaction !</h1>
+        <p class="relative top-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci.</p>
+    </div>
+    <div class="expcus text-center p-3">
+        <i class="icon fa-solid fa-meteor"></i>
+        <h1 class="block relative top-10 ">New Arrivals</h1>
+        <p class="relative top-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci.</p>
+    </div>
+    <div class="expcus text-center p-3">
+        <i class="icon fa-solid fa-truck-fast"></i>
+        <h1 class="block relative top-10 ">Fast shipping</h1>
+        <p class="relative top-14">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, adipisci.</p>
+    </div>
+    </div>
+  </section>
+  <!-- section 5 new arrivals -->
+   <section class="m-16 ">
+    <h1 class="font-bold text-2xl">New Arrivals</h1>
+    <div class="flex relative top-10 justify-between">
+        <div class="arrivals">
+            <img src="images/cloth-2.jpg" alt="">
+        </div>
+        <div class="arrivals">
+            <img src="images/new-cloth1.jpg" alt="">
+        </div>
+        <div class="arrivals">
+            <img src="images/cloth-3.jpg" alt="">
+        </div>
+        <div class="arrivals">
+            <img src="images/new-cloth2.jpg" alt="">
+        </div>
+
+    </div>
+   </section>
+   <!-- section 6 mostwanted -->
+   <section class="mostWant__con  m-16 ">
+    <h1 class="font-bold text-2xl">Most Wanted</h1>
+    <div class="flex relative top-10 justify-between">
+        <div class="mostWant">
+            <!-- <i class=" cart absolute top-2 left-3 bg-black transform scale-150 fa-solid fa-cart-shopping"></i> -->
+            <img src="images/cloth-3.jpg" alt="">
+        </div>
+        <div class="mostWant">
+            <img src="images/cloth-2.jpg" alt="">
+        </div>
+        <div class="mostWant">
+            <img src="images/new-cloth2.jpg" alt="">
+        </div>
+        <div class="mostWant">
+            <img src="images/new-cloth1.jpg" alt="">
+        </div>
+       
+       
+
+    </div>
+   </section>
+   <!-- section 7 linited offer -->
+    <section class="flex justify-center mt-42 bg-black p-5 mx-4">
+        <img class="limited__sale " src="images/limited-sale.jpg" alt="">
+    </section>
+    <!-- section 8 customer input -->
+    <section class="text-center mt-5" >
+        <h1 class="font-bold text-2xl"> Join us News letter</h1>
+        <p>Sign-up for Email our News letter to get exclusive Discounts! , updates and more </p>
+        <input class="border  border-blue-600 p-2 m-3 focus:outline-none " style="width: 80%;" type="text">
+     <br>
+        <button class="bg-red-500 text-white p-2 m-1 px-10 border-none rounded-2xl hover:opacity-80 hover:text-green-100 "> Subscribe</button>
+    </section>
+    <!-- section 9 footer -->
+    <section class="bg-black text-white mt-12 p-10 ">
+        <div class="mt-4">
+            <h1 class="font-bold text-4xl">Shopolics</h1>
+        <p class="mt-5">We offer you wide range of Wadrobe Haul Collection</p>
+        <p class="mt-5">&copy; 2025 Shopolics.com</p>
+        <p class="w-3/4 mt-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam explicabo eaque quasi est atque. Assumenda iste deleniti exercitationem accusamus magni.</p>
+        </div>
+
+       </section>
+  <script src="script.js"></script>
+</body>
+</html>
