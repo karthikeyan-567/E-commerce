@@ -1,0 +1,172 @@
+html {
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+  }
+  body {
+    background-color: white;
+  }
+  .container {
+    top: 50px;
+    border: solid 2px wheat;
+    width: 1200px;
+    overflow: hidden;
+    margin: auto;
+    position: relative;
+    border-radius: 10px;
+  }
+  .btn {
+    transform: scale(5);
+    background: transparent;
+    border: none;
+    display: block;
+    margin-left: 30px;
+    opacity: 0.5;
+  }
+  .slider {
+    display: flex;
+    width: 3600px;
+    /* animation: imgSlider infinite ease-in-out; */
+    transition: 1s linear;
+  }
+  /* @keyframes imgSlider {
+        
+        50%{
+            transform: translateX(-500px);}
+        100%{
+            transform: translateX(-1000px);}
+    } */
+  .left {
+    position: absolute;
+    z-index: 3;
+    right: 30px;
+    top: 40%;
+  }
+  .right {
+    left: 0;
+    top: 40%;
+    position: absolute;
+    z-index: 3;
+  }
+  .slide img {
+    width: 1200px;
+    height: 500px;
+    filter: brightness(0.3);
+  }
+  .shopbtn {
+    font-size: 30px;
+    background-color: rgb(0, 0, 0, 0.6);
+    border: solid gray 4px;
+    position: absolute;
+    z-index: 5;
+    color: wheat;
+    border-radius: 15px;
+    padding-inline: 80px;
+    padding-block: 15px;
+    top: 80%;
+    left: 40%;
+    transition: 0.3s;
+  }
+  .shopbtn:hover {
+    /* background-color: rgb(110, 126, 127); */
+    opacity: 1;
+
+    transform: scale(1.02);
+  }
+
+  #ADD {
+    background-color: #1e242d;
+
+    /* transition: 2s; */
+  }
+
+  .navBar {
+    padding-bottom: 10px;
+    z-index: 10;
+  }
+
+  .imgbrands {
+    width: 200px;
+    height: 200px;
+  }
+  .expcus {
+    position: relative;
+    width: 300px;
+    height: 220px;
+    border-radius: 10%;
+    background-color: rgba(200, 200, 200, 0.4);
+  }
+  .expcus h1 {
+    top: 50px;
+    font-weight: bolder;
+    font-size: x-large;
+  }
+  .expcus p {
+    text-align: start;
+  }
+  .icon {
+    transform: scale(4);
+    position: relative;
+
+    top: 20px;
+    display: inline-block;
+  }
+  .arrivals {
+    z-index: -2;
+  }
+  .arrivals img {
+    width: 250px;
+    animation-name: cloth;
+    height: 250px;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+
+    animation-iteration-count: infinite;
+    z-index: -2;
+    filter: brightness(0.3);
+  }
+  .shop-now:hover {
+    opacity: 0.5;
+  }
+
+  .mostWant {
+    padding: 0;
+  }
+  .mostWant cart {
+    transform: scale(2.5);
+  }
+  .mostWant__con {
+    margin-top: 200px;
+  }
+  .mostWant img {
+    width: 200px;
+    z-index: -1;
+
+    height: 200px;
+  }
+  .favW,
+  .favR {
+    cursor: pointer;
+  }
+
+  .limited__sale {
+    height: 400px;
+
+    width: 90%;
+  }
+  #NewArrivals {
+    transition: 2s;
+  }
+  .addClose:hover {
+    opacity: 0.7;
+  }
+  .popup {
+    display: none;
+  }
+  .overlay {
+    position: absolute;
+    z-index: 35;
+    opacity: 0.7;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
