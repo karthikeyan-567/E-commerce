@@ -1,11 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- font Awsome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- tailwindcss -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Collection</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section
+      id="navBar"
+      class="navBar flex sticky top-0 bg-white transition-all duration-1000"
+    >
+      <nav class="mt-5 flex justify-around items-center p-1.5 z-10 bg-white">
+        <h2 class="relative left-3 font-extrabold text-2xl">Shopolics</h2>
+        <ul class="flex bg-inherit gap-16 relative left-96">
+          <a href="index.html"><li>Home</li></a>
+          <a
+            class="transition-all duration-1000 ease-linear"
+            href="#NewArrivals"
+          >
+            <li>New Arrival</li></a
+          >
+          <a href="#MostWanted"> <li>Most Wanted</li></a>
+          <a> <li>Collection</li></a>
+          <a> <li>Conatct Us</li></a>
+        </ul>
+      </nav>
+    </section>
+    <!-- whole Sectionn for prodducts -->
+    <section class="flex gap-12">
+    <aside class="aside-bar">
+      <div class="aside__sec1">
+        <h1 class="aside__sec1-heading">Occasion</h1>
+        <div class=" input-aside ">
+        <div><input class="" type="checkbox" name="Occasion" value="Summer">Summer</div>
+        <div><input class="" type="checkbox" name="Occasion" value="Party">Party</div>
+        <div><input class="" type="checkbox" name="Occasion" value="Beach">Beach</div>
+       
+      
+        </div>
+      <div class="aside__sec2 mt-16">
+        <h1 class="aside__sec2-heading">Colors</h1>
+        <div class=" input-aside ">
+        <div><input class="" type="checkbox" name="Colors" value="Blue">Blue</div>
+        <div><input class="" type="checkbox" name="Colors" value="Red">Red</div>
+        <div><input class="" type="checkbox" name="Colors" value="Yellow">Yellow</div>
+        <div><input class="" type="checkbox" name="Colors" value="Green">Green</div>
+        </div>
+        </div>
+    </aside>
+ <section id="MainContent" class="Main_haul">
+  <div class="summer-haul">
+   
+    <div class="summer__haul--prod colorDiv">
+      <img src="images/summer_1.webp" alt="">
+      <h1>
+        Summer Jungle-Yellow
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="summer__haul--prod colorDiv">
+      <img src="images/summer_2.webp" alt="">
+      <h1>
+        Summer Leafy-Yellow
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="summer__haul--prod colorDiv">
+      <img src="images/summer_3.webp" alt="">
+      <h1>
+        Summer cool-Textured Blue
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="summer__haul--prod colorDiv">
+      <img src="images/summer_4.webp" alt="">
+      <h1>
+        Summer Leafy-Yellow
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="summer__haul--prod colorDiv">
+      <img src="images/summer_5.webp" alt="">
+      <h1>
+        Summer Boxee-Green
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
     
-</body>
+    <h1 class="summer-header"><b>Wipe Sweat Free Shirts</b>
+      <i class="fa-solid fa-arrow-right-long"></i></h1> 
+    
+  </div>
+  <!-- Beach section  -->
+  <div class="Beach-haul">
+   
+    <div class="beach__haul--prod colorDiv">
+      <img src="images/beach1.webp" alt="">
+      <h1>
+        Beach-wear Yellow
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="beach__haul--prod colorDiv">
+      <img src="images/beach2.webp" alt="">
+      <h1>
+        Beach-wear Blue
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="beach__haul--prod colorDiv">
+      <img src="images/beach3.webp" alt="">
+      <h1>
+        Beach-wear Blue
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="beach__haul--prod colorDiv">
+      <img src="images/beach4.webp" alt="">
+      <h1>
+        Beach-wear Blue
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="beach__haul--prod colorDiv">
+      <img src="images/beach5.webp" alt="">
+      <h1>
+       Beach-wear Black
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <h1 class="beach-header"><b>Beach Hang out Shirts</b>
+      <i class="fa-solid fa-arrow-right-long"></i></h1>
+  
+    
+  </div>
+
+  <div class="party-haul">
+   
+    <div class="party__haul--prod colorDiv">
+      <img src="images/partyWear1.webp" alt="">
+      <h1>
+        Party-wear black
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="party__haul--prod colorDiv">
+      <img src="images/partyWear2.webp" alt="">
+      <h1>
+        Party-wear Red
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="party__haul--prod colorDiv">
+      <img src="images/partyWear3.webp" alt="">
+      <h1>
+        Party-wear Blue
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="party__haul--prod colorDiv">
+      <img src="images/partyWear4.webp" alt="">
+      <h1>
+        Party-wear Red
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+    <div class="party__haul--prod colorDiv">
+      <img src="images/partyWear5.webp" alt="">
+      <h1>
+        Party-wear Green
+      </h1>
+      <p><del>1000</del> 999</p>
+    </div>
+   <div class="party-header"> <h1><b>Party Wear Chill shirts</b>
+      <i class="fa-solid fa-arrow-right-long"></i></h1></div>
+ </section>
+    </section>
+    <h1 id="ref"></h1>
+    <h1 id="refocc"></h1>
+    <script src="coll.js"></script>
+  </body>
 </html>
